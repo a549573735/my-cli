@@ -5,7 +5,7 @@ npm i leo-lx-cli -g
 
 npm install 
 
-leo-lx-cli  create  project name
+leo-lx-cli  create  projectName
 
 
 
