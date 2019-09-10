@@ -1,11 +1,11 @@
 # my-cli
 脚手架拉取git账户项目
 
-npm i leo-lx-cli
+npm i leo-lx-cli -g
 
 npm install 
 
-leo-lx-cli  create  <project name>
+leo-lx-cli  create  project name
 
 
 
