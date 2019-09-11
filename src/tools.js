@@ -4,6 +4,7 @@ const { promisify } = require('util');
 let downloadGitRepo = require('download-git-repo');
 downloadGitRepo = promisify(downloadGitRepo);
 
+//封装loading 
 const waitFnLoading= (fn,message)=> async (...args)=>{
     let spinner =ora(message);
     spinner.start();
@@ -12,6 +13,7 @@ const waitFnLoading= (fn,message)=> async (...args)=>{
     return result;
 }
 
+//分装下载
 const download=async (repo,tag)=>{
     let api=`a549573735/${repo}`;
     if(tag){

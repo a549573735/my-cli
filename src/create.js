@@ -12,8 +12,6 @@ const { waitFnLoading, download } = require('./tools')
 let { render } = require('consolidate').ejs;
 render = promisify(render);
 
-
-
 //获取项目列表
 const fetchRepoList = async () => {
     const { data } = await axios.get('https://api.github.com/users/a549573735/repos')
@@ -27,7 +25,6 @@ const fetchTagList = async (repo) => {
 }
 
 
-//封装loading 
 
 module.exports = async (projectName) => {
     let result;
